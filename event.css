@@ -1,0 +1,230 @@
+.event-hero {
+  height: 60vh;
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.event-hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.event-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.event-section {
+  padding: 80px 0;
+  background: #0a0a0a;
+  color: white;
+}
+
+.event-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.event-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #333;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 0, 0, 0.2);
+}
+
+.event-image {
+  height: 500px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.1);
+}
+
+.event-content {
+  padding: 30px;
+}
+
+.event-date {
+  color: #ff0000;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.event-description {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.event-status {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-upcoming {
+  background: #ff0000;
+  color: white;
+}
+
+.status-ongoing {
+  background: #00ff00;
+  color: black;
+}
+
+.status-completed {
+  background: #666;
+  color: white;
+}
+
+.event-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.event-detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.event-detail-label {
+  color: #999;
+}
+
+.event-detail-value {
+  color: white;
+  font-weight: bold;
+}
+
+.section-title {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #999;
+  font-size: 1.8rem;
+  margin-bottom: 60px;
+}
+
+.countdown-section {
+  background: linear-gradient(135deg, #ff0000, #800000);
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.countdown-item {
+  text-align: center;
+}
+
+.countdown-number {
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.countdown-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.cta-section {
+  background: #1a1a1a;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #ff0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-button:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .event-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .countdown-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .countdown-number {
+    font-size: 2rem;
+  }
+}

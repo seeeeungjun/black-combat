@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>BLACK COMBAT - RANKING</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ranking.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');">
+  <!-- Font Awesome 최신 CDN (v6 기준) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- 네비게이션 -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html"><img src="images/logo (1).png" alt="BLACK COMBAT"></a></li>
+      <li><a href="company.html">COMPANY</a></li>
+
+      <li><a href="event.html">EVENT</a></li>
+      <li><a href="rules.html">RULES</a></li>
+      <li><a href="ranking.html" class="active">RANKING</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="hero-section">
+    <div class="hero-background">
+      <div class="hero-pattern"></div>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">BLACK COMBAT</h1>
+      <h2 class="hero-subtitle">RANKING</h2>
+      <p class="hero-description">최고의 파이터들</p>
+    </div>
+  </section>
+
+  <!-- 라이트급 랭킹 -->
+  <section class="ranking-section">
+    <div class="container">
+      <h2 class="section-title">RANKING</h2>
+      <div class="champion-cards">
+        <!-- 라이트급 챔피언 -->
+        <div class="champion-card">
+          <div class="champion-belt">
+            <i class="fas fa-crown"></i>
+            <span>LIGHTWEIGHT CHAMPION</span>
+          </div>
+          <div class="champion-photo">
+            <img src="images/문기범.png" alt="Lightweight Champion">
+          </div>
+          <div class="champion-info">
+            <h3 class="champion-name">문기범</h3>
+            <p class="champion-record">전적: 15승 2패</p>
+            <p class="champion-weight">체급: 라이트급</p>
+            <p class="champion-description">현재 BLACK COMBAT 라이트급 챔피언입니다.</p>
+          </div>
+          <button id="btn-light" class="show-swiper">순위 더보기</button>
+          <button id="btn-light-close" class="close-swiper" style="display:none;"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <!-- 웰터급 챔피언 -->
+        <div class="champion-card">
+          <div class="champion-belt">
+            <i class="fas fa-crown"></i>
+            <span>WELTERWEIGHT CHAMPION</span>
+          </div>
+          <div class="champion-photo">
+            <img src="images/최준서전신.png" alt="Welterweight Champion">
+          </div>
+          <div class="champion-info">
+            <h3 class="champion-name">최준서</h3>
+            <p class="champion-record">전적: 16승 1패</p>
+            <p class="champion-weight">체급: 웰터급</p>
+            <p class="champion-description">현재 BLACK COMBAT 웰터급 챔피언입니다.</p>
+          </div>
+          <button id="btn-welter" class="show-swiper">순위 더보기<!-- <i class="fa-solid fa-plus"></i> --></button>
+          <button id="btn-welter-close" class="close-swiper" style="display:none;"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <!-- 미들급 챔피언 -->
+        <div class="champion-card">
+          <div class="champion-belt">
+            <i class="fas fa-crown"></i>
+            <span>MIDDLEWEIGHT CHAMPION</span>
+          </div>
+          <div class="champion-photo">
+            <img src="images/킹콩.png" alt="Middleweight Champion">
+          </div>
+          <div class="champion-info">
+            <h3 class="champion-name">오일학</h3>
+            <p class="champion-record">전적: 17승 0패</p>
+            <p class="champion-weight">체급: 미들급</p>
+            <p class="champion-description">현재 BLACK COMBAT 미들급 챔피언입니다.</p>
+          </div>
+          <button id="btn-middle" class="show-swiper">순위 더보기<!-- <i class="fa-solid fa-plus"></i> --></button>
+          <button id="btn-middle-close" class="close-swiper" style="display:none;"><i class="fa-solid fa-minus"></i></button>
+        </div>
+      </div>
+      <!-- 라이트급 2-10등 스와이프 -->
+      <div class="swiper-container ranking-swiper" id="swiper-light">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="ranking-card">
+              <div class="ranking-number">2th</div>
+              <div class="fighter-photo">
+                <img src="images/라1.png" alt="Fighter 2" onerror="this.src='https://via.placeholder.com/200x250/000000/FFC800?text=#2'">
+              </div>
+              <div class="fighter-info">
+                <h3 class="fighter-name">오하라 주리</h3>
+                <p class="fighter-record">전적: 12승 3패</p>
+                <p class="fighter-weight">체급: 라이트급</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ranking-card">
+              <div class="ranking-number">3th</div>
+              <div class="fighter-photo">
+                <img src="images/라2.png" alt="Fighter 3" onerror="this.src='https://via.placeholder.com/200x250/000000/FFC800?text=#3'">
+              </div>
+              <div class="fighter-info">
+                <h3 class="fighter-name">박어진</h3>
+                <p class="fighter-record">전적: 10승 4패</p>
+                <p class="fighter-weight">체급: 라이트급</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ranking-card">
+              <div class="ranking-number">4th</div>
+              <div class="fighter-photo">
+                <img src="images/라3.png" alt="Fighter 4" onerror="this.src='https://via.placeholder.com/200x250/000000/FFC800?text=#4'">
+              </div>
+              <div class="fighter-info">
+                <h3 class="fighter-name">이승철</h3>
+                <p class="fighter-record">전적: 9승 5패</p>
+                <p class="fighter-weight">체급: 라이트급</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ranking-card">
+              <div class="ranking-number">5th</div>
+              <div class="fighter-photo">
+                <img src="images/라4.png" alt="Fighter 5" onerror="this.src='https://via.placeholder.com/200x250/000000/FFC800?text=#5'">
+              </div>
+              <div class="fighter-info">
+                <h3 class="fighter-name">구온민</h3>
+                <p class="fighter-record">전적: 8승 6패</p>
+                <p class="fighter-weight">체급: 라이트급</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ranking-card">
+              <div class="ranking-number">6th</div>
+              <div class="fighter-photo">
+                <img src="images/라5.png" alt="Fighter 6" onerror="this.src='https://via.placeholder.com/200x250/000000/FFC800?text=#6'">
+              </div>
+              <div class="fighter-info">
+                <h3 class="fighter-name">김철한</h3>
+                <p class="fighter-record">전적: 7승 7패</p>
+                <p class="fighter-weight">체급: 라이트급</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ranking-card">
+              <div class="ranking-number">7th</div>
+              <div class="fighter-photo">
+                <img src="images/라6.png" alt="Fighter 7" onerror="this.src='https://via.placeholder.com/200x250/000000/FFC800?text=#7'">
+              </div>
+              <div class="fighter-info">
+                <h3 class="fighter-name">박어진</h3>
+                <p class="fighter-record">전적: 6승 8패</p>
+                <p class="fighter-weight">체급: 라이트급</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ranking-card">
+              <div class="ranking-number">8th</div>
+              <div class="fighter-photo">
+                <img src="images/라7.png" alt="Fighter 8" onerror="this.src='https://via.placeholder.com/200x250/000000/FFC800?text=#8'">
+              </div>
+              <div class="fighter-info">
+                <h3 class="fighter-name">유민우</h3>
+                <p class="fighter-record">전적: 5승 9패</p>
+                <p class="fighter-weight">체급: 라이트급</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ranking-card">
+              <div class="ranking-number">9th</div>
+              <div class="fighter-photo">
+                <img src="images/라8.png" alt="Fighter 9" onerror="this.src='https://via.placeholder.com/200x250/000000/FFC800?text=#9'">
+              </div>
+              <div class="fighter-info">
+                <h3 class="fighter-name">박호철</h3>
+                <p class="fighter-record">전적: 4승 10패</p>
+                <p class="fighter-weight">체급: 라이트급</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ranking-card">
+              <div class="ranking-number">10th</div>
+              <div class="fighter-photo">
+                <img src="images/라9.png" alt="Fighter 10" onerror="this.src='https://via.placeholder.com/200x250/000000/FFC800?text=#10'">
+              </div>
+              <div class="fighter-info">
+                <h3 class="fighter-name">Flavio Santos</h3>
+                <p class="fighter-record">전적: 3승 11패</p>
+                <p class="fighter-weight">체급: 라이트급</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        <!-- 웰터급 2-10등 스와이프 -->
+        <div class="swiper-container ranking-swiper" id="swiper-welter">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#2</div>
+                <div class="fighter-photo">
+                  <img src="images/w1.png" alt="Fighter 2">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">오일왕</h3>
+                  <p class="fighter-record">전적: 14승 2패</p>
+                  <p class="fighter-weight">체급: 웰터급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#3</div>
+                <div class="fighter-photo">
+                  <img src="images/w2.png" alt="Fighter 3">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">신병인</h3>
+                  <p class="fighter-record">전적: 12승 3패</p>
+                  <p class="fighter-weight">체급: 웰터급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#4</div>
+                <div class="fighter-photo">
+                  <img src="images/w3.png" alt="Fighter 4">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">Dwain</h3>
+                  <p class="fighter-record">전적: 11승 4패</p>
+                  <p class="fighter-weight">체급: 웰터급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#5</div>
+                <div class="fighter-photo">
+                  <img src="images/w4.png" alt="Fighter 5">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">윤야차</h3>
+                  <p class="fighter-record">전적: 10승 5패</p>
+                  <p class="fighter-weight">체급: 웰터급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#6</div>
+                <div class="fighter-photo">
+                  <img src="images/w5.png" alt="Fighter 6">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">구석기</h3>
+                  <p class="fighter-record">전적: 9승 6패</p>
+                  <p class="fighter-weight">체급: 웰터급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#7</div>
+                <div class="fighter-photo">
+                  <img src="images/w6.png" alt="Fighter 7">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">민승기</h3>
+                  <p class="fighter-record">전적: 8승 7패</p>
+                  <p class="fighter-weight">체급: 웰터급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#8</div>
+                <div class="fighter-photo">
+                  <img src="images/w7.png" alt="Fighter 8">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">구환웅</h3>
+                  <p class="fighter-record">전적: 7승 8패</p>
+                  <p class="fighter-weight">체급: 웰터급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#9</div>
+                <div class="fighter-photo">
+                  <img src="images/w8.png" alt="Fighter 9">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">Dolpy</h3>
+                  <p class="fighter-record">전적: 6승 9패</p>
+                  <p class="fighter-weight">체급: 웰터급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#10</div>
+                <div class="fighter-photo">
+                  <img src="images/w9.png" alt="Fighter 10">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">Mgun</h3>
+                  <p class="fighter-record">전적: 5승 10패</p>
+                  <p class="fighter-weight">체급: 웰터급</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 미들급 2-10등 스와이프 -->
+        <div class="swiper-container ranking-swiper" id="swiper-middle">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#2</div>
+                <div class="fighter-photo">
+                  <img src="images/q1.png" alt="Fighter 2">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">장현민</h3>
+                  <p class="fighter-record">전적: 15승 2패</p>
+                  <p class="fighter-weight">체급: 미들급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#3</div>
+                <div class="fighter-photo">
+                  <img src="images/q8.png" alt="Fighter 3">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">박승준</h3>
+                  <p class="fighter-record">전적: 13승 3패</p>
+                  <p class="fighter-weight">체급: 미들급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#4</div>
+                <div class="fighter-photo">
+                  <img src="images/q2.png" alt="Fighter 4">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">강희찬</h3>
+                  <p class="fighter-record">전적: 12승 4패</p>
+                  <p class="fighter-weight">체급: 미들급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#5</div>
+                <div class="fighter-photo">
+                  <img src="images/q7.png" alt="Fighter 5">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">박민철</h3>
+                  <p class="fighter-record">전적: 11승 5패</p>
+                  <p class="fighter-weight">체급: 미들급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#6</div>
+                <div class="fighter-photo">
+                  <img src="images/q3.png" alt="Fighter 6">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">김승아</h3>
+                  <p class="fighter-record">전적: 10승 6패</p>
+                  <p class="fighter-weight">체급: 미들급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#7</div>
+                <div class="fighter-photo">
+                  <img src="images/q4.png" alt="Fighter 7">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">박재명</h3>
+                  <p class="fighter-record">전적: 9승 7패</p>
+                  <p class="fighter-weight">체급: 미들급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#8</div>
+                <div class="fighter-photo">
+                  <img src="images/q5.png" alt="Fighter 8">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">장문수</h3>
+                  <p class="fighter-record">전적: 8승 8패</p>
+                  <p class="fighter-weight">체급: 미들급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#9</div>
+                <div class="fighter-photo">
+                  <img src="images/q6.png" alt="Fighter 9">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">문근혜</h3>
+                  <p class="fighter-record">전적: 7승 9패</p>
+                  <p class="fighter-weight">체급: 미들급</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ranking-card">
+                <div class="ranking-number">#10</div>
+                <div class="fighter-photo">
+                  <img src="images/q10.png" alt="Fighter 10">
+                </div>
+                <div class="fighter-info">
+                  <h3 class="fighter-name">박재인</h3>
+                  <p class="fighter-record">전적: 6승 10패</p>
+                  <p class="fighter-weight">체급: 미들급</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- 웰터급 랭킹 -->
+  <!-- <section class="ranking-section welterweight">
+    <div class="container">
+      <h2 class="section-title">WELTERWEIGHT RANKING</h2>
+      
+
+
+    </div>
+  </section> -->
+
+  <!-- 미들급 랭킹 -->
+  <!-- <section class="ranking-section middleweight">
+    <div class="container">
+      <h2 class="section-title">MIDDLEWEIGHT RANKING</h2>
+      
+
+
+    </div>
+  </section> -->
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_inner">
+      <div class="footer-text">
+        주식회사 이데아 파라곤 대표: 박평화 | 사업자 등록번호 : 682-81-02925 | 통신판매업신고번호 : 2022-서울금천-2877 <br>
+        사업장 주소: 서울 금천구 가산디지털1로 142 1302호 (가산동, 가산 더스카이밸리 1차) | 전화 : 070-4193-9293<br>
+        개인정보 보호책임자 : 박영광 (pykp3927@gmail.com) | Blackcombat © 2025. All Rights Reserved.
+      </div>
+      <div class="sns">
+        <div class="sns-icon">
+          <a href="https://www.youtube.com/@blackcombat"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/blackcombat_official/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="ranking.js"></script>
+</body>
+
+</html>

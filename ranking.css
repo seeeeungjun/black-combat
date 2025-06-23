@@ -1,0 +1,365 @@
+/* 랭킹 페이지 스타일 */
+
+/* 기본 오버플로우 설정 */
+html, body {
+  overflow-x: hidden;
+}
+
+/* 챔피언 섹션 */
+.champion-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+}
+
+.champion-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.champion-card {
+  flex: 1 1 0;
+  min-width: 320px;
+  max-width: 400px;
+  margin: 0 10px;
+  position: relative;
+  background: linear-gradient(145deg, #FFC800 0%, #FFD700 100%);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(255, 200, 0, 0.3);
+}
+
+.champion-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.champion-card button{font-size: 20px; font-weight: 600; border-radius: 10px; background: none; border: none; position: absolute; bottom: -50px; color: #fff; opacity: 1000; cursor: pointer; left: calc(30%); width: 150px; height: 50px; background-color: rgb(187, 44, 44);}
+
+.champion-belt {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+.champion-belt i {
+  margin-right: 8px;
+  color: #FFD700;
+}
+
+.champion-photo {
+  width: 300px;
+  height: 400px;
+  margin: 30px auto 20px;
+  border-radius: 15px;
+  background-color:black;
+  overflow: hidden;
+  border: 5px solid #000;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.champion-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.champion-info {
+  position: relative;
+  z-index: 5;
+}
+
+.champion-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.champion-record {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.champion-weight {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.champion-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 랭킹 섹션 */
+.ranking-section {
+  padding: 80px 0;
+  background: #000;
+}
+
+.ranking-section.welterweight {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+}
+
+.ranking-section.middleweight {
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+}
+
+/* 랭킹 그리드 스타일 */
+.ranking-swiper {
+  margin-top: 30px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.ranking-swiper.active {
+  display: block;
+  opacity: 1;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.ranking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.ranking-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.ranking-card {
+  background: linear-gradient(145deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.ranking-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #FFC800, #FFD700, #FFC800);
+}
+
+.ranking-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 200, 0, 0.2);
+  border-color: #FFC800;
+}
+
+.ranking-number {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(45deg, #FFC800, #FFD700);
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 5px 15px rgba(255, 200, 0, 0.3);
+}
+
+.fighter-photo {
+  width: 200px;
+  height: 250px;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* border: 3px solid #FFC800; */
+  /* box-shadow: 0 10px 25px rgba(255, 200, 0, 0.2); */
+}
+
+.fighter-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.ranking-card:hover .fighter-photo img {
+  transform: scale(1.05);
+}
+
+.fighter-info {
+  position: relative;
+  z-index: 5;
+}
+
+.fighter-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFC800;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.fighter-record {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.fighter-weight {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+/* 스와이퍼 페이지네이션 스타일 */
+.ranking-swiper .swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+}
+
+.ranking-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #333;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.ranking-swiper .swiper-pagination-bullet-active {
+  background: #FFC800;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* 섹션 제목 스타일 */
+.ranking-section .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFC800;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.ranking-section .section-title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #FFC800, #FFD700);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .champion-card {
+    padding: 30px 20px;
+    margin: 0 20px;
+  }
+  
+  .champion-photo {
+    width: 250px;
+    height: 330px;
+  }
+  
+  .champion-name {
+    font-size: 2rem;
+  }
+  
+  .ranking-swiper {
+    margin: 30px 20px 0;
+  }
+  
+  .ranking-card {
+    padding: 20px;
+    max-width: 250px;
+  }
+  
+  .fighter-photo {
+    width: 180px;
+    height: 225px;
+  }
+  
+  .ranking-section .section-title {
+    font-size: 2rem;
+    margin: 0 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .champion-card {
+    padding: 25px 15px;
+  }
+  
+  .champion-photo {
+    width: 200px;
+    height: 260px;
+  }
+  
+  .champion-name {
+    font-size: 1.8rem;
+  }
+  
+  .ranking-swiper {
+    margin: 20px 15px 0;
+  }
+  
+  .ranking-card {
+    padding: 15px;
+    max-width: 220px;
+  }
+  
+  .fighter-photo {
+    width: 160px;
+    height: 200px;
+  }
+  
+  .ranking-section .section-title {
+    font-size: 1.8rem;
+  }
+} 
