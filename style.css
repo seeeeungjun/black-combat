@@ -42,42 +42,10 @@ body{background-color: #000000;}
 
 .navbar li a:hover{color: white;}
 
-.main-title{color: rgb(255, 200, 0);position: absolute;font-size: 80px;top: 40%; left:20%}
+.main-title{color: rgb(255, 200, 0);position: absolute;font-size: 80px;top: 40%; left:22%}
 
 .blackbombat{position: absolute;color: rgb(255, 255, 255);top: 60%;left: calc(39%); font-size: 50px;}
-.scroll{
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  animation: scrollBounce 2s ease-in-out infinite;
-}
 
-.scroll-arrow {
-  width: 2px;
-  height: 30px;
-  background: rgb(255, 200, 0);
-  margin: 0 auto;
-  position: relative;
-}
-
-.scroll-arrow::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: -4px;
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid rgb(255, 200, 0);
-  border-bottom: 2px solid rgb(255, 200, 0);
-  transform: rotate(45deg);
-}
-
-@keyframes scrollBounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-10px); }
-}
 
 #mid-visual {
   background-color: #000000;
